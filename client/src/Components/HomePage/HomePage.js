@@ -1,12 +1,12 @@
-import React from 'react'
-import Header from './Header'
-import Body from './Body'
+import React from 'react';
+import Header from './Header';
+import Body from './Body';
 
 export default function HomePage () {
   return (
     <div>
-   <Header/>
-   <Body/>
-   </div>
-  )
+      <Header/>
+      <Body/>
+    </div>
+  );
 }

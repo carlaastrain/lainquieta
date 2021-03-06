@@ -1,6 +1,6 @@
 // THIS IS MY CUSTOMER MODEL
-const { DataTypes } = require('sequelize')
-const sequelize = require('../config/sequelize')
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/sequelize');
 
 const Customer = sequelize.define('Customer', {
   // Model attributes are defined here
@@ -18,8 +18,8 @@ const Customer = sequelize.define('Customer', {
   }
 }, {
   // Other model options go here
-})
+});
 
-console.log('customer table success')
+console.log('customer table success');
 
-module.exports = Customer
+module.exports = Customer;

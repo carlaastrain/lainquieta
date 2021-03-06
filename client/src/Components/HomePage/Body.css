@@ -1,20 +1,8 @@
-body header {
-    background-image: url('../../assetsSRC/nature.jpg');
-   }
-   
+
    body {
        font-family: 'Montserrat', sans-serif;
    }
-   
-   .pageHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: sticky;
-    top: 0; 
-    z-index: -1; 
-    min-height: 700px;
-   }
+
    
    .container {
     width: 75vw;
@@ -31,32 +19,9 @@ body header {
    .logoWrapper img{
        height: 70px;
        width: 67px;
-     
+    
    }
-   
-   .navUl{
-       color: #ffffff;
-       display: flex;
-       flex-direction:row;
-       list-style-type: none;  
-       align-items: center;
-       position: sticky;
-   
-   }
-   
-   .navUl li {
-       margin-right: 28px;
-       font-weight: 700; 
-       font-size: 22px;
-       font-family: sans-serif;
-       position: sticky;
-       
-   }
-   
-   .svg-inline {
-       height: 21px;
-       color: white; 
-   }
+
    
    :before{
        box-sizing: border-box;
@@ -141,7 +106,7 @@ body header {
        display: flex;
        flex-direction: column;
        align-items: center;
-      
+     
    }
    
    .highlights-wrapper h5 {

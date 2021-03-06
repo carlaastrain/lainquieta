@@ -1,5 +1,7 @@
 body header {
     background-image: url('../../assetsSRC/nature.jpg');
+ 
+
    }
    
    body {
@@ -11,9 +13,8 @@ body header {
     flex-direction: column;
     align-items: center;
     position: sticky;
-    top: 0; 
-    z-index: -1; 
     min-height: 700px;
+   
    }
    
    .container {
@@ -25,14 +26,10 @@ body header {
      flex-direction: row;
      align-items: center;
      justify-content: space-between;
+  
    
    }
-   
-   .logoWrapper img{
-       height: 70px;
-       width: 67px;
-     
-   }
+
    
    .navUl{
        color: #ffffff;
@@ -41,7 +38,8 @@ body header {
        list-style-type: none;  
        align-items: center;
        position: sticky;
-   
+       z-index: 1; 
+       top:0;   
    }
    
    .navUl li {
@@ -50,13 +48,15 @@ body header {
        font-size: 22px;
        font-family: sans-serif;
        position: sticky;
-       
+       z-index: 1; 
+       top:0;   
    }
    
    .svg-inline {
        height: 21px;
-       color: white; 
+       color: white;    
    }
+   
    
    :before{
        box-sizing: border-box;

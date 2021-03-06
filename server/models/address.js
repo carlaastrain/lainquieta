@@ -1,5 +1,5 @@
-const { DataTypes } = require('sequelize')
-const sequelize = require('../config/sequelize')
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/sequelize');
 
 // this is my model Addres, it will convert it to addresses for create a table
 const Address = sequelize.define('Address', {
@@ -28,6 +28,6 @@ const Address = sequelize.define('Address', {
   }
 }, {
   // Other model options go here
-})
-console.log('table adress success')
-module.exports = Address
+});
+
+module.exports = Address;

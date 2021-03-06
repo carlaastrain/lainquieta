@@ -1,37 +1,46 @@
-const express = require('express')
-const router = express.Router()
-const controllerCustomer = require('./controllers/customer.controller')
-const controllerOrder = require('./controllers/order.controllers')
-const controllerProduct = require('./controllers/products.controller')
+const express = require('express');
+const router = express.Router();
+const controllerCustomer = require('./controllers/customer.controller');
+const controllerOrder = require('./controllers/order.controllers');
+const controllerProduct = require('./controllers/products.controller');
+const controllerAddress = require('./controllers/address.controller');
 
 // CUSTOMERS 😛
 // get customers
-router.get('/customers', controllerCustomer.getCustomers)
+router.get('/customers', controllerCustomer.getCustomers);
 
 // create a single customer
-router.post('/customers', controllerCustomer.createCustomer)
+router.post('/customers', controllerCustomer.createCustomer);
 
 // delete customer
-router.delete('/customers/:idCustomer', controllerCustomer.deleteCustomer)
+router.delete('/customers/:idCustomer', controllerCustomer.deleteCustomer);
 
 // ORDER 📜
 //  get orders
-router.get('/orders', controllerOrder.getOrders)
+router.get('/orders', controllerOrder.getOrders);
 
 //  get order
-router.get('/orders/:idOrder', controllerOrder.getOrder)
+router.get('/orders/:idOrder', controllerOrder.getOrder);
 
 //  post order
-router.post('/orders', controllerOrder.createOrder)
+router.post('/orders', controllerOrder.createOrder);
 
 // PRODUCT 🍕
 // get products
-router.get('/products', controllerProduct.getProducts)
+router.get('/products', controllerProduct.getProducts);
 
 // create a single product
-router.post('/products', controllerProduct.createProduct)
+router.post('/products', controllerProduct.createProduct);
 
 // delete product
-router.delete('/products/:idProduct', controllerProduct.deleteProduct)
+router.delete('/products/:idProduct', controllerProduct.deleteProduct);
 
-module.exports = router
+
+// ADDRESS 🎃
+// create a single address
+router.post('/address', controllerAddress.createAddress);
+
+// delete product
+router.delete('/address/:idAddress', controllerAddress.deleteAddress);
+
+module.exports = router;

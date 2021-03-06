@@ -1,5 +1,5 @@
-const { DataTypes } = require('sequelize')
-const sequelize = require('../config/sequelize')
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/sequelize');
 
 const Product = sequelize.define('Product', {
   // Model attributes are defined here
@@ -14,9 +14,17 @@ const Product = sequelize.define('Product', {
   price: {
     type: DataTypes.DECIMAL(10, 2)
     // allowNull defaults to true
+  },
+  quantityStock: {
+    type: DataTypes.FLOAT
+    // allowNull defaults to true
+  },
+  units: {
+    type: DataTypes.STRING
+    // allowNull defaults to true
   }
 }, {
   // Other model options go here
-})
-console.log('product table success')
-module.exports = Product
+});
+console.log('product table success');
+module.exports = Product;

@@ -1,0 +1,107 @@
+/*nav */ 
+#title {
+    color: black; 
+    font: arial; 
+    display: inline-block; 
+  }
+  
+  .forest {
+     height: 70px; 
+     padding-left: 35px;
+     width: 67px;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    color: white; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-weight: bolder;
+    font-family:Graphik LCG Web, Graphik Arabic Web Regular, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, Lucida Grande, Sans-Serif;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px 0.4px 0 #a2a2a2, 25px 10px 30px rgb(0 0 0 / 10%);
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+
+
+  .features {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;  
+    justify-content: center;
+    color: black;
+  
+  }
+  
+  .features li {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(177, 79, 177); 
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: burlywood;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;  
+    align-items: center;
+    color: hotpink;
+  }
+
+  .socialMedia li {
+    padding-left: 1.5em;
+ 
+  
+  }
+  
+  #buttonDwl {
+    color: white; 
+    background-color: #ff5b82; 
+    border-color: #ff5b82;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 0 30px;
+    margin-right: 20px;
+    height: 48px; 
+    font-weight: bolder;
+    font-size: 17px;
+    box-shadow: 1px 0.4px 0 #a2a2a2, 25px 20px 30px rgb(0 0 0 / 10%);
+  }
+
+  .svg-inline {
+    color:black; 
+    
+  }
+  /*end of the nav */ 
