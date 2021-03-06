@@ -4,6 +4,7 @@ const controllerCustomer = require('./controllers/customer.controller');
 const controllerOrder = require('./controllers/order.controllers');
 const controllerProduct = require('./controllers/products.controller');
 const controllerAddress = require('./controllers/address.controller');
+const controllerCategory = require('./controllers/category.controller');
 
 // CUSTOMERS 😛
 // get customers
@@ -36,11 +37,23 @@ router.post('/products', controllerProduct.createProduct);
 router.delete('/products/:idProduct', controllerProduct.deleteProduct);
 
 
-// ADDRESS 🎃
+// ADDRESS 🏡
 // create a single address
-router.post('/address', controllerAddress.createAddress);
+router.post('/addresses', controllerAddress.createAddress);
 
 // delete product
-router.delete('/address/:idAddress', controllerAddress.deleteAddress);
+router.delete('/addresses/:idAddress', controllerAddress.deleteAddress);
+
+
+// CATEGORY 🏡
+// get categories of products 
+router.get('/categories', controllerCategory.getCategories);
+
+// get category  
+router.get('/categories/:idCategory', controllerCategory.getCategory);
+
+// delete category 
+router.delete('/categories/:idCategory', controllerCategory.deleteCategory);
+
 
 module.exports = router;

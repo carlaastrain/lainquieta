@@ -11,5 +11,5 @@ const ProductsHasOrders = sequelize.define('ProductsHasOrders', {
 }, {
   timestamps: false
 });
-console.log('products_has_orders table success');
+
 module.exports = ProductsHasOrders;

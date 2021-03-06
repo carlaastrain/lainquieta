@@ -26,7 +26,7 @@ exports.createOrder = async (req, res) => {
       for (const p of products) {
         const product = await Product.findByPk(p.id, { transaction: t });
         if (p.quantity > product.quantityStock) {
-          throw Error ('No more stock');
+          throw new Error ('No more stock');
         } else {
           //In Model Instances Sequelize explain how update and .save() the table 
           product.quantityStock = product.quantityStock - p.quantity;
