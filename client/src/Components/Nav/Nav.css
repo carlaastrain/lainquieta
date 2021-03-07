@@ -24,9 +24,9 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 0; 
     z-index: 1;
+    width: 100%;
     box-shadow: 1px 0.4px 0 #a2a2a2, 25px 10px 30px rgb(0 0 0 / 10%);
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }

@@ -26,5 +26,5 @@ const Product = sequelize.define('Product', {
 }, {
   // Other model options go here
 });
-console.log('product table success');
+
 module.exports = Product;

@@ -12,25 +12,22 @@ export default function Body () {
               <div className="icon-wrapper">
                 <img src="/assets/shopping-cart.svg" />
               </div>
-              <h5>Extensible</h5>
-              <p> Gives you true flexibility by allowing use of any other libraries thanks to modular
-            architecture. </p>
+              <h5>Online</h5>
+              <p> Gives you true flexibility by allowing you to order from the commodity of your house. </p>
             </div>
             <div className="col-md-4 highlight-block">
               <div className="icon-wrapper">
                 <img src="/assets/organic.svg"/>
               </div>
-              <h5>Versatile</h5>
-              <p> An adaptable ecosystem that is a fully-fledged backbone for all kinds of server-side
-            applications. </p>
+              <h5>Quality</h5>
+              <p> Premium quality in all the products, eco-friendly and bio </p>
             </div>
             <div className="col-md-4 highlight-block">
               <div className="icon-wrapper">
                 <img src="/assets/handshake.svg"/>
               </div>
-              <h5>Progressive</h5>
-              <p> Takes advantage of latest JavaScript features, bringing design patterns and mature solutions to
-            Node.js world. </p>
+              <h5>Fair</h5>
+              <p> Local products and fair trade </p>
             </div>
           </div>
         </div>

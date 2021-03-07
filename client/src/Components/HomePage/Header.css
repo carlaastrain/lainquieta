@@ -74,13 +74,14 @@ body header {
        color: white;
    }
    
-   .main-wrapper h4 {
+   .main-wrapper h3 {
        font-weight: 600;
        max-width: 600px;
        margin: 0;
        font-size: 18px;
        line-height: 32px;
        color: white;
+       font-style:initial;
    }
    
    .buttons-wrapper {
