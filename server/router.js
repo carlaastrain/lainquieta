@@ -10,6 +10,9 @@ const controllerCategory = require('./controllers/category.controller');
 // get customers
 router.get('/customers', controllerCustomer.getCustomers);
 
+// get customer
+router.get('/customers/:idCustomer', controllerCustomer.getCustomer);
+
 // create a single customer
 router.post('/customers', controllerCustomer.createCustomer);
 

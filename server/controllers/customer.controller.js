@@ -14,6 +14,19 @@ exports.getCustomers = async (req, res) => {
   }
 };
 
+// Find customers
+exports.getCustomer = async (req, res) => {
+  try {
+    const {idCustomer} = req.params; 
+    const customer = await Customer.findByPk(idCustomer);
+
+    res.send(customer);
+  } catch (error) {
+    res.status(500);
+    res.send(error);
+  }
+};
+
 // POST single customer
 exports.createCustomer = async (req, res) => {
   try {
